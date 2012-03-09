@@ -42,3 +42,5 @@ function gems {
 		-Ee "s/$current_ruby@global/$fg[yellow]&$reset_color/g" \
 		-Ee "s/$current_ruby$current_gemset$/$fg[green]&$reset_color/g"
 }
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

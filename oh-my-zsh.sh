@@ -73,4 +73,4 @@ else
     fi
   fi
 fi
-
+echo "Zsh started!"
