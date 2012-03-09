@@ -1,4 +1,4 @@
-local user='%{$fg[blue]%}%m%{$reset_color%}'
+local start_mark='%{$fg[blue]%}$%{$reset_color%}'
 local pwd='%{$fg[green]%}%~%{$reset_color%}'
 local prompt_separator='%{$fg[red]%}:'
 local rvm=''
@@ -24,5 +24,5 @@ ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%}r "
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%}um "
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}ut "
 
-PROMPT="${user} ${pwd} ${prompt_separator} "
+PROMPT="${start_mark} ${pwd} ${prompt_separator} "
 RPROMPT="${return_code} ${git_branch} ${rvm}"
